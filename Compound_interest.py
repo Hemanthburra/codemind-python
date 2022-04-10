@@ -1,0 +1,4 @@
+p,r,t=map(int,input().split())
+ci=(p*(1+(r/100))**t)
+op="{:.2f}".format(ci)
+print(op)
