@@ -1,0 +1,7 @@
+s=input()
+s=list(s)
+c=0
+for i in range(len(s)):
+    if s[i]==" ":
+        c+=1
+print(c)
