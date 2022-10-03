@@ -1,14 +1,10 @@
 s=input()
 s=list(s)
-s=set(s)
-s=list(s)
-s.sort()
-s=list(s)
+cnt=0
+d=[]
 for i in range(len(s)):
-    if s[i].isupper() or s[i]==" ":
-        continue
-    else:
-        print(s[i],end="")
-    
-    
-    
+    if s.count(s[i])==1 and s[i].islower():
+        d.append(s[i])
+        #print(s[i],end="")
+d.sort()
+print("".join(d))
