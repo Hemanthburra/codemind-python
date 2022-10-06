@@ -6,13 +6,16 @@ def isprime(n):
         if n%i==0:
             return False
     return True
-
-n=input()
-#print(isprime(int(n)),isprime(int(n[::-1])))
-if isprime(int(n)) and isprime(int(n[::-1])):
+t=int(input())
+e=str(t)
+e=int(e[::-1])
+if isprime(t) and isprime(e):
     print("circular prime")
-elif isprime(int(n)) or isprime(int(n[::-1])):
+elif isprime(t) or isprime(e):
     print("prime but not a circular prime")
 else:
     print("not prime")
+        
+    
+
         
