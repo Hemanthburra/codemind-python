@@ -6,19 +6,21 @@ def isprime(n):
         if n%i==0:
             return False
     return True
-n=int(input())
+
+a=int(input())
 l=[]
-for i in range(n+n):
+for i in range(a+a):
     if isprime(i):
         l.append(i)
-        if i>=n:
+        if i>a:
             break
-if n in l:
-    print(n-n)
-elif abs(l[-1]-n)>=abs(l[-2]-n):
-    print(abs(l[-2]-n))
-elif abs(l[-1]-n)<=abs(l[-2]-n):
-    print(abs(l[-1]-n))
-
+if a in l:
+    print(a-a)
+elif abs(l[-1]-a)>=abs(l[-2]-a):
+    print(abs(l[-2]-a))
+elif abs(l[-1]-a)<abs(l[-2]-a):
+    print(abs(l[-1]-a))
+    
+    
 
         
