@@ -6,8 +6,11 @@ def isprime(n):
         if n%i==0:
             return False
     return True
-l=int(input())
-r=int(input())
-for j in range(l,r+1):
-    if isprime(j):
-        print(j)
+t=int(input())
+t1=int(input())
+for i in range(t,t1+1):
+    if isprime(i):
+        print(i)
+    
+
+        
