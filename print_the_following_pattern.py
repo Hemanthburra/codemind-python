@@ -1,5 +1,8 @@
-n=int(input())
-for i in range(n,0,-1):
-    for j in range(i):
-        print(chr(64+i),end=" ")
-    print()
+t=int(input())
+k=list('x')*t
+k[0]='0'
+for i in range(t):
+    print("".join(k))
+    if i==len(k):
+        break
+    k[i],k[i+1]=k[i+1],k[i]
