@@ -1,17 +1,21 @@
+def palin(n):
+    n=str(n)
+    if n==n[::-1]:
+        return True
+    return False
+
 n=int(input())
-f=[]
-for i in range(1,n*n):
-    d=str(i)
-    if str(i)==d[::-1]:
-        f.append(int(d[::-1]))
-        if int(str(i))>(n):
+l=[]
+for i in range(n+n):
+    if palin(i):
+        l.append(i)
+        if i>n:
             break
-n=int(n)
-if n in f:
-    f.remove(n)
-if (abs((f[-1])-n))==(abs((f[-2]-n))):
-    print(f[-2],f[-1])
-elif (abs((f[-1]-n)))<(abs((f[-2]-n))):
-    print(f[-1])
-else:
-    print(f[-2])
+if n in l:
+    l.remove(n)
+if abs(l[-1]-n)>abs(l[-2]-n):
+    print(l[-2])
+elif abs(l[-1]-n)<abs(l[-2]-n):
+    print(l[-1])
+elif abs(l[-1]-n)==abs(l[-2]-n):
+    print(l[-2],l[-1])
